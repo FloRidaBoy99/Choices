@@ -2812,7 +2812,8 @@ class Choices {
             label: o.innerHTML,
             selected: o.selected,
             disabled: o.disabled || o.parentNode.disabled,
-            placeholder: o.hasAttribute('placeholder')
+            placeholder: o.hasAttribute('placeholder'),
+            customProperties: JSON.parse(o.getAttribute('data-custom-properties'))
           });
         });
 
